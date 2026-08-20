@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using TMPro; // TextMeshProを使用
+using TMPro;
 
 public class ScoreCounter : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class ScoreCounter : MonoBehaviour
 
     private Coroutine _counterCoroutine;
 
-    // 外部（ゲーム管理スクリプトなど）からこれを呼び出す
+    // 外部からこれを呼び出す
     public void SetScoreAnimated(int startValue, int endValue)
     {
         if (_counterCoroutine != null) StopCoroutine(_counterCoroutine);
